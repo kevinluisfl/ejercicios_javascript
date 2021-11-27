@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Dame empleo, FizzBuzz</title>
+    <style media="screen">
+body{
+        background-color: gray;
+        color: white;
+      }
+    strong {
+      color: red;
+    }
+    a{
+      color: blue;
+    }
+    </style>
+  </head>
+  <body>
+    <h2>
+      Ejercio<a> Fizz</a><strong>Buzz</strong>
+    </h2>
+    <p>La dinamica consisten en que dentro de un rango:
+      <br>
+      poner <a>Fizz</a> si el numero es divisible por 3
+      <br>
+      poner <strong>Buzz</strong> si el numero es divisible por 5
+      <br>
+      y poner <a>Fizz</a><strong>Buzz</strong> si es divisible por 3 y 5.
+    </p>
+    <h4>Cual es el rango que se va a generar</h4>
+    <p>Inicio del rango: <input type="number" value="1" id="numer1" /></p>
+    <p>Final del rango: <input type="number" id="numer2" /></p>
+    <input type="button"  value="Generar" id="btn">
+    <input type="button"  value="Nuevo" id="limp">
+<p id="info"></p>
+    <p id="result"></p>
+    <script type="text/javascript" src="fizz.js">
+    </script>
+  </body>
+</html>

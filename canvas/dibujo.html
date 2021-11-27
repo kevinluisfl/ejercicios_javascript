@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Dibujando con canvas</title>
+    <style media="screen">
+      body{
+      color:white;
+      background-color: teal;
+      }
+      p{
+        font-size: 20px;
+      }
+      canvas{
+        background-color: gray;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Dibujo en canvas</h1>
+    <p>
+      Seleccione el color de linea 1 
+      <input type="color" id="colore1" list="listaColores"><br>
+      Seleccione el color de linea 2
+      <input type="color" id="colore2" list="listaColores"><br>
+      Seleccione el color de linea 3 
+      <input type="color" id="colore3" list="listaColores"><br>
+      Seleccione el color de linea 4 
+      <input type="color" id="colore4" list="listaColores"><br>
+
+      <datalist id="listaColores">
+      <option value="#000000">
+      <option value="#FFFFFF">
+      <option value="#FF00FF">
+      <option value="#00AAFF">
+      <option value="#AFA000">
+      <option value="#AAAAAA">
+      </datalist>
+
+      Cuantas lineas quieres? (por trazo):
+      <input type="number" id="liniecitas"/>
+      <input type="button" value="Generar" id = "botoncito"/>
+    </p>
+    <canvas width="300" height="300" id="dibujito"></canvas>
+    <p>Asi queda tu dibujo</p>
+    <script type="text/javascript" src="dibujo.js"></script>
+  </body>
+</html>

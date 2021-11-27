@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Dibujando con flechas y mouse</title>
+    <style media="screen">
+    body{
+      background-color: teal;
+      color: white;
+    }
+    #areaDibujo{
+      background-color: grey;
+    }
+      #btnAmar{
+        background-color: yellow;
+      }
+      #btnAzul{
+        color: white;
+        background-color: blue;
+      }
+      #btnRojo{
+        color: white;
+        background-color: red;
+      }
+    </style>
+  </head>
+
+  <body>
+    <p>Escriba grosor de linea</p>
+    <input type="number" id="grosorLine">
+    <p>seleccione el color de linea</p>
+    <input type="button" value="Amarillo" id="btnAmar"/>
+    <input type="button" value="Azul" id="btnAzul"/>
+    <input type="button" value="Rojo" id="btnRojo"/>
+    <input type="color" id="colorete" list="listaColores">
+    <datalist id="listaColores">
+      <option value="#000000">
+      <option value="#FFFFFF">
+      <option value="#FF00FF">
+      <option value="#00AAFF">
+      <option value="#AFA000">
+      <option value="#AAAAAA">
+    </datalist>
+    <br>
+    <br>
+    <canvas id="areaDibujo" width="300" height="300"></canvas>
+    <p>Dibuja con el mouse o flechas del teclado</p>
+    <input type="button" value="limpiar" id="btnLimp"/>
+    <script type="text/javascript" src="eventoMT2.js">
+    </script>
+  </body>
+</html>

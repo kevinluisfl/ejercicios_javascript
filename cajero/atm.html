@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Cajero automatico</title>
+    <style media="screen">
+    body{
+      background-color: grey;
+      color: white;
+    }
+      #saldo{
+        background-color: white;
+        color: green;
+      }
+      #retirado{
+        background-color: white;
+        color: red;
+      }
+      #resultado{
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+    <img src="img/cajero.gif" />
+    </p>
+      <p id="saldo"> </p>
+    <h3>Ingrese la cantidad a retirar</h3>
+    <p>
+      <input type="number" id="dinero">
+      <input type="button" value="Extraer" id="extraer">
+      <input type="button" value="Disponible" id="disponible">
+      <input type="button" value="Historial" id="histori">
+    </p>
+
+    <p id="retirado"></p>
+    <p id="resultado"></p>
+    <script src="cajero.js"></script>
+      <script src="cajeroClass.js"></script>
+  </body>
+</html>
